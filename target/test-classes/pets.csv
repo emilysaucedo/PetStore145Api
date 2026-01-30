@@ -1,0 +1,4 @@
+petId, petName, catId, catName, status1, status2
+178997, Scooby, 1, dog, available, sold
+178998, Bichneto, 2, cat, available, sold
+178999, Nemo, 3, fish, available, sold

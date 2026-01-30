@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petstore.TestPet" time="11.062" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\PetStore145Api\target\test-classes;C:\PetStore145Api\target\classes;C:\Users\emily\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.1\junit-jupiter-api-6.0.1.jar;C:\Users\emily\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\emily\.m2\repository\org\junit\platform\junit-platform-commons\6.0.1\junit-platform-commons-6.0.1.jar;C:\Users\emily\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\emily\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\emily\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.1\junit-jupiter-params-6.0.1.jar;C:\Users\emily\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\emily\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\emily\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\emily\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\emily\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\emily\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\emily\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\emily\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\emily\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\emily\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\emily\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\emily\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\emily\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\emily\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\emily\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\emily\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\emily\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\emily\AppData\Local\Temp\surefire3611702293865670558\surefirebooter-20260130174422937_3.jar C:\Users\emily\AppData\Local\Temp\surefire3611702293865670558 2026-01-30T17-44-22_609-jvmRun1 surefire-20260130174422937_1tmp surefire_0-20260130174422937_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\PetStore145Api\target\test-classes;C:\PetStore145Api\target\classes;C:\Users\emily\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.0.1\junit-jupiter-api-6.0.1.jar;C:\Users\emily\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\emily\.m2\repository\org\junit\platform\junit-platform-commons\6.0.1\junit-platform-commons-6.0.1.jar;C:\Users\emily\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\emily\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\emily\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.0.1\junit-jupiter-params-6.0.1.jar;C:\Users\emily\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\emily\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\emily\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\emily\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\emily\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\emily\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\emily\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\emily\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\emily\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\emily\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\emily\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\emily\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\emily\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\emily\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\emily\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\emily\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\emily\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\emily"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\PetStore145Api"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\emily\AppData\Local\Temp\surefire3611702293865670558\surefirebooter-20260130174422937_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
+    <property name="user.name" value="emily"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\emily\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\emily\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="C:\PetStore145Api"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\emily\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\emily\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;%ANDROID_SKD_ROOT%;%ANDROID_SKD_ROOT%\platform-tools;%ANDROID_SKD_ROOT%\emulator;%ANDROID_SKD_ROOT%\cmdline-tools;C:\Program Files\Java\jdk-25.0.2\bin;C:\apache-maven-3.9.12\bin;C:\Users\emily\AppData\Local\Programs\Python\Launcher;C:\Users\emily\AppData\Local\Microsoft\WindowsApps;C:\Users\emily\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\emily\AppData\Roaming\npm;C:\Users\emily\.cursor\extensions\vscjava.vscode-java-debug-0.58.5-universal\bundled\scripts\noConfigScripts;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.2+10-LTS-69"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="PostPet" classname="petstore.TestPet" time="5.697">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 178999,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "ratazana",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 178999,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "ratazana",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+]]></system-out>
+    <system-err><![CDATA[jan. 30, 2026 5:44:24 PM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
+WARNING: TestEngine with ID 'junit-jupiter' encountered 2 non-critical issues during test discovery:
+
+(1) [WARNING] @Test method 'public static java.lang.String petstore.TestUser.login()' must not be static. It will not be executed.
+    Source: MethodSource [className = 'petstore.TestUser', methodName = 'login', methodParameterTypes = '']
+            at petstore.TestUser.login(SourceFile:0)
+
+(2) [WARNING] @Test method 'public static java.lang.String petstore.TestUser.login()' must not return a value. It will not be executed.
+    Source: MethodSource [className = 'petstore.TestUser', methodName = 'login', methodParameterTypes = '']
+            at petstore.TestUser.login(SourceFile:0)
+]]></system-err>
+  </testcase>
+  <testcase name="GetPet" classname="petstore.TestPet" time="1.55">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/user/login?username=emily&password=123456
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+X-Expires-After: Fri Jan 30 21:44:32 UTC 2026
+X-Rate-Limit: 5000
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "logged in user session:1769805872477"
+}
+Conteudo do Token/API Key: 1769805872477
+Request method:	GET
+Request URI:	https://petstore.swagger.io/v2/pet/178999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		=api_key: 1769805872477
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: close
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 178999,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "ratazana",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="PutPet" classname="petstore.TestPet" time="0.672">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 178999,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "ratazana",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "sold"
+}
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 178999,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "ratazana",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "sold"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="DeletePet" classname="petstore.TestPet" time="0.647">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/178999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:34 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "178999"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="PostPetDDT(int, String, int, String, String, String)[1]" classname="petstore.TestPet" time="0.709">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 178997,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "Scooby",
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:35 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 178997,
+    "category": {
+        "id": 1,
+        "name": "dog"
+    },
+    "name": "Scooby",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="PostPetDDT(int, String, int, String, String, String)[2]" classname="petstore.TestPet" time="0.687">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 178998,
+    "category": {
+        "id": 2,
+        "name": "cat"
+    },
+    "name": "Bichneto",
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:36 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 178998,
+    "category": {
+        "id": 2,
+        "name": "cat"
+    },
+    "name": "Bichneto",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="PostPetDDT(int, String, int, String, String, String)[3]" classname="petstore.TestPet" time="0.917">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 178999,
+    "category": {
+        "id": 3,
+        "name": "fish"
+    },
+    "name": "Nemo",
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+HTTP/1.1 200 OK
+Date: Fri, 30 Jan 2026 20:44:36 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 178999,
+    "category": {
+        "id": 3,
+        "name": "fish"
+    },
+    "name": "Nemo",
+    "photoUrls": [
+        
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "vacinado"
+        },
+        {
+            "id": 2,
+            "name": "vermifugado"
+        }
+    ],
+    "status": "available"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
