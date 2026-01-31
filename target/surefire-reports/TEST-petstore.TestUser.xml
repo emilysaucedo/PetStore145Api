@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petstore.TestPet" time="7.658" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="petstore.TestUser" time="5.106" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,9 +59,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="PostPet" classname="petstore.TestPet" time="2.707">
+  <testcase name="PostUser" classname="petstore.TestUser" time="0.646">
     <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
+Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -73,29 +73,17 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 178999,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "ratazana",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "id": 149,
+    "username": "saucedo",
+    "firstName": "Emily",
+    "lastName": "Pires",
+    "email": "mily@mail.com",
+    "password": "123456",
+    "phone": "44999999999",
+    "userStatus": 7534
 }
 HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:04 GMT
+Date: Sat, 31 Jan 2026 16:29:10 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -105,41 +93,13 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 178999,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "ratazana",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "code": 200,
+    "type": "unknown",
+    "message": "149"
 }
 ]]></system-out>
-    <system-err><![CDATA[jan. 31, 2026 1:29:01 PM org.junit.platform.launcher.core.DiscoveryIssueNotifier logIssues
-WARNING: TestEngine with ID 'junit-jupiter' encountered 2 non-critical issues during test discovery:
-
-(1) [WARNING] @Test method 'public static java.lang.String petstore.TestUser.login()' must not be static. It will not be executed.
-    Source: MethodSource [className = 'petstore.TestUser', methodName = 'login', methodParameterTypes = '']
-            at petstore.TestUser.login(SourceFile:0)
-
-(2) [WARNING] @Test method 'public static java.lang.String petstore.TestUser.login()' must not return a value. It will not be executed.
-    Source: MethodSource [className = 'petstore.TestUser', methodName = 'login', methodParameterTypes = '']
-            at petstore.TestUser.login(SourceFile:0)
-]]></system-err>
   </testcase>
-  <testcase name="GetPet" classname="petstore.TestPet" time="1.398">
+  <testcase name="GetUser" classname="petstore.TestUser" time="1.349">
     <system-out><![CDATA[Request method:	GET
 Request URI:	https://petstore.swagger.io/v2/user/login?username=emily&password=123456
 Proxy:			<none>
@@ -153,38 +113,38 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:05 GMT
+Date: Sat, 31 Jan 2026 16:29:11 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Sat Jan 31 17:29:05 UTC 2026
+X-Expires-After: Sat Jan 31 17:29:11 UTC 2026
 X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1769876945479"
+    "message": "logged in user session:1769876951017"
 }
-Conteudo do Token/API Key: 1769876945479
+Conteudo do Token/API Key: 1769876951017
 Request method:	GET
-Request URI:	https://petstore.swagger.io/v2/pet/178999
+Request URI:	https://petstore.swagger.io/v2/user/saucedo
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		=api_key: 1769876945479
+Headers:		=api_key: 1769876951017
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:06 GMT
+Date: Sat, 31 Jan 2026 16:29:11 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: close
@@ -194,32 +154,20 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 178999,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "ratazana",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "id": 149,
+    "username": "saucedo",
+    "firstName": "Emily",
+    "lastName": "Pires",
+    "email": "mily@mail.com",
+    "password": "123456",
+    "phone": "44999999999",
+    "userStatus": 7534
 }
 ]]></system-out>
   </testcase>
-  <testcase name="PutPet" classname="petstore.TestPet" time="0.687">
+  <testcase name="PutUser" classname="petstore.TestUser" time="0.617">
     <system-out><![CDATA[Request method:	PUT
-Request URI:	https://petstore.swagger.io/v2/pet
+Request URI:	https://petstore.swagger.io/v2/user/saucedo
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -231,76 +179,17 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 178999,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "ratazana",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "sold"
+    "id": 149,
+    "username": "saucedo",
+    "firstName": "Emily",
+    "lastName": "Saucedo",
+    "email": "mily@mail.com",
+    "password": "123456",
+    "phone": "4411111111",
+    "userStatus": 7534
 }
 HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:06 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-Server: Jetty(9.2.9.v20150224)
-
-{
-    "id": 178999,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "ratazana",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "sold"
-}
-]]></system-out>
-  </testcase>
-  <testcase name="DeletePet" classname="petstore.TestPet" time="0.664">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	https://petstore.swagger.io/v2/pet/178999
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:07 GMT
+Date: Sat, 31 Jan 2026 16:29:12 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -312,13 +201,43 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "178999"
+    "message": "149"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="PostPetDDT(int, String, int, String, String, String)[1]" classname="petstore.TestPet" time="0.723">
+  <testcase name="DeleteUser" classname="petstore.TestUser" time="0.617">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/user/saucedo
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 31 Jan 2026 16:29:12 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "saucedo"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="PostUserDDT(int, String, String, String, String, String, String, int)[1]" classname="petstore.TestUser" time="0.622">
     <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
+Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -330,26 +249,17 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 178997,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "Scooby",
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "id": 901,
+    "username": "mi",
+    "firstName": "Emily",
+    "lastName": "Pires",
+    "email": "mily@mail.com",
+    "password": "ratazana",
+    "phone": "4499999999",
+    "userStatus": 7534
 }
 HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:08 GMT
+Date: Sat, 31 Jan 2026 16:29:13 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -359,32 +269,15 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 178997,
-    "category": {
-        "id": 1,
-        "name": "dog"
-    },
-    "name": "Scooby",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "code": 200,
+    "type": "unknown",
+    "message": "901"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="PostPetDDT(int, String, int, String, String, String)[2]" classname="petstore.TestPet" time="0.665">
+  <testcase name="PostUserDDT(int, String, String, String, String, String, String, int)[2]" classname="petstore.TestUser" time="0.619">
     <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
+Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -396,26 +289,17 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 178998,
-    "category": {
-        "id": 2,
-        "name": "cat"
-    },
-    "name": "Bichneto",
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "id": 902,
+    "username": "gogo",
+    "firstName": "Golias",
+    "lastName": "Lopes",
+    "email": "gogo@gmail.com",
+    "password": "123456",
+    "phone": "11999898888",
+    "userStatus": 7534
 }
 HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:09 GMT
+Date: Sat, 31 Jan 2026 16:29:14 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -425,32 +309,15 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 178998,
-    "category": {
-        "id": 2,
-        "name": "cat"
-    },
-    "name": "Bichneto",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "code": 200,
+    "type": "unknown",
+    "message": "902"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="PostPetDDT(int, String, int, String, String, String)[3]" classname="petstore.TestPet" time="0.684">
+  <testcase name="PostUserDDT(int, String, String, String, String, String, String, int)[3]" classname="petstore.TestUser" time="0.624">
     <system-out><![CDATA[Request method:	POST
-Request URI:	https://petstore.swagger.io/v2/pet
+Request URI:	https://petstore.swagger.io/v2/user
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -462,26 +329,17 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": 178999,
-    "category": {
-        "id": 3,
-        "name": "fish"
-    },
-    "name": "Nemo",
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "id": 903,
+    "username": "guizo",
+    "firstName": "Guilherme",
+    "lastName": "Fereira",
+    "email": "gui@yahoo.com",
+    "password": "m4rt4",
+    "phone": "4488888888",
+    "userStatus": 7534
 }
 HTTP/1.1 200 OK
-Date: Sat, 31 Jan 2026 16:29:09 GMT
+Date: Sat, 31 Jan 2026 16:29:14 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -491,26 +349,9 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 178999,
-    "category": {
-        "id": 3,
-        "name": "fish"
-    },
-    "name": "Nemo",
-    "photoUrls": [
-        
-    ],
-    "tags": [
-        {
-            "id": 1,
-            "name": "vacinado"
-        },
-        {
-            "id": 2,
-            "name": "vermifugado"
-        }
-    ],
-    "status": "available"
+    "code": 200,
+    "type": "unknown",
+    "message": "903"
 }
 ]]></system-out>
   </testcase>

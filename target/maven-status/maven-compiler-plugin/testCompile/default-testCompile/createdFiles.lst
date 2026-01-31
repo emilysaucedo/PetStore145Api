@@ -1,5 +1,6 @@
 petstore\TestUser.class
-petstore\Pet$Tag.class
 petstore\TestPet.class
 petstore\Pet.class
 petstore\Pet$Category.class
+petstore\Pet$Tag.class
+petstore\User.class
